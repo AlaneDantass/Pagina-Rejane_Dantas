@@ -1,0 +1,96 @@
+/* Reset de estilos para garantir uma base consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior ao cabeçalho */
+}
+
+
+/* Estilo para o conteúdo do cabeçalho */
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para o título do cabeçalho */
+header h1 {
+    margin-right: 20px;
+}
+
+/* Estilo para a imagem do cabeçalho */
+header img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Estilo para a biografia */
+.bio {
+    max-width: 700px;
+}
+/* Estilo para o texto oculto */
+.textoOculto {
+    display: none;
+}
+
+/* Estilo para o body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe3f9;
+    color: #333;
+    padding: 20px;
+}
+
+
+/* Estilo para as imagens nos artigos */
+article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    max-height: 200px;
+}
+
+/* Estilo para os títulos dos artigos */
+article h2 {
+    margin-bottom: 10px;
+}
+
+/* Estilo para os parágrafos nos artigos */
+article p {
+    margin-bottom: 20px;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilo para os parágrafos dentro do rodapé */
+footer p {
+    margin: 10px 0;
+}
+
+/* Estilo para o link do Instagram */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo para o link do Instagram quando hover (passar o mouse) */
+footer a:hover {
+    text-decoration: underline;
+}
+
