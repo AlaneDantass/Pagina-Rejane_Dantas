@@ -13,6 +13,8 @@ header {
     padding: 20px;
     background-color: #f8f8f8;
     margin-bottom: 20px; /* Adiciona um espaçamento inferior ao cabeçalho */
+    border-radius: 10px;
+    color: #333;
 }
 
 
@@ -29,26 +31,23 @@ header h1 {
 
 /* Estilo para a imagem do cabeçalho */
 header img {
-    max-width: 100px;
-    height: auto;
-    border-radius: 50%;
+    max-width: 150px;
+    height: 150;
+    border-radius: 50%; /* Transforma a imagem em um círculo */
 }
 
 /* Estilo para a biografia */
 .bio {
     max-width: 700px;
 }
-/* Estilo para o texto oculto */
-.textoOculto {
-    display: none;
-}
 
 /* Estilo para o body */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffe3f9;
-    color: #333;
+    background-color: hsl(329, 100%, 92%);
+    color: #252525;
     padding: 20px;
+    font-weight: 400;
 }
 
 
@@ -76,6 +75,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    border-radius: 10px;
 }
 
 /* Estilo para os parágrafos dentro do rodapé */
