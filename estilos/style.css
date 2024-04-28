@@ -7,14 +7,16 @@
 
 /* Estilo para o cabeçalho */
 header {
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    padding: 20px;
+    display: flex; /* Define o contêiner como um contêiner flexível */
+    align-items: center; /* Centraliza os itens verticalmente dentro do contêiner */
+    justify-content:space-around;/* Distribui os itens ao longo do eixo principal com espaçamento uniforme ao redor deles */
+    padding: 20px; /* Adiciona um espaçamento interno de 20 pixels ao redor do conteúdo do contêiner */
     background-color: #f8f8f8;
-    margin-bottom: 20px; /* Adiciona um espaçamento inferior ao cabeçalho */
+    margin-bottom: 20px; /* Adiciona um espaçamento de 20 pixels na parte inferior do contêiner */
+    /* Isso cria um espaço entre ele e o próximo elemento */
     border-radius: 10px;
     color: #333;
+
 }
 
 
