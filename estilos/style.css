@@ -9,21 +9,19 @@
 header {
     display: flex; /* Define o contêiner como um contêiner flexível */
     align-items: center; /* Centraliza os itens verticalmente dentro do contêiner */
-    justify-content:space-around;/* Distribui os itens ao longo do eixo principal com espaçamento uniforme ao redor deles */
+    justify-content: space-around; /* Distribui os itens ao longo do eixo principal com espaçamento uniforme ao redor deles */
     padding: 20px; /* Adiciona um espaçamento interno de 20 pixels ao redor do conteúdo do contêiner */
     background-color: #f8f8f8;
     margin-bottom: 20px; /* Adiciona um espaçamento de 20 pixels na parte inferior do contêiner */
-    /* Isso cria um espaço entre ele e o próximo elemento */
     border-radius: 10px;
     color: #333;
-
 }
-
 
 /* Estilo para o conteúdo do cabeçalho */
 .header-content {
     display: flex;
     align-items: center;
+    padding: 30px;
 }
 
 /* Estilo para o título do cabeçalho */
@@ -34,7 +32,7 @@ header h1 {
 /* Estilo para a imagem do cabeçalho */
 header img {
     max-width: 150px;
-    height: 150;
+    height: 150px;
     border-radius: 50%; /* Transforma a imagem em um círculo */
 }
 
@@ -50,8 +48,8 @@ body {
     color: #252525;
     padding: 20px;
     font-weight: 400;
+    text-align: center; /* Centraliza todos os textos do corpo do site */
 }
-
 
 /* Estilo para as imagens nos artigos */
 article img {
@@ -96,3 +94,69 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Responsividade */
+
+/* Tablets em paisagem (>= 768px) */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    header h1 {
+        margin: 10px 0;
+    }
+}
+
+/* Smartphones (<= 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    header h1 {
+        margin: 10px 0;
+    }
+
+    header img {
+        max-width: 100px;
+        height: 100px;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    /* Ajuste para as imagens nos artigos */
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    article img {
+        max-width: 45%; /* Reduz a largura máxima da imagem */
+        margin: 5px; /* Adiciona margem entre as imagens */
+    }
+
+    /* Centraliza os parágrafos e títulos dentro dos artigos */
+    article h2, article p {
+        width: 100%;
+        text-align: center;
+    }
+}
